@@ -153,7 +153,8 @@ O projeto aplica o padrão Factory Method para desacoplar as camadas:
 
 - `TConnectionFactory` — fornece a conexão ADO ao banco
 - `TRepositoryFactory` — cria o repositório e retorna via interface `ITaskRepository`
-- `TTaskService` — conhece apenas a interface, nunca a implementação concreta
+- `TTaskFactory` — cria o `TTaskService` já configurado, pronto para uso nos controllers
+- `TTaskService` — conhece apenas a interface `ITaskRepository`, nunca a implementação concreta
 
 ## Autor
 
